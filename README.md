@@ -1,1 +1,1 @@
-<h1>Studyig Swift</h1><br>
+<h1>Swift Study</h1><br>
