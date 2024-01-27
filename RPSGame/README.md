@@ -69,9 +69,8 @@
 <hr/>
 > 코드 완성
 
-
 <br/>
-* 이미지 넣는 방법 <br/>
+<h2>이미지 넣는 방법</h2><br/>
 1. "#imageLiteral(" 을 하면 assets 파일에 있는 이미지를 선택할 수 있다.<br/>
 2. UIImage(named: ) 로 assets 파일 안에 있는 이미지 이름을 쓰면 된다.<br/>
 
@@ -80,4 +79,18 @@
         myImageView.image = UIImage(named: "ready.png")
 </code></pre><br>
 
-
+<h2>rpsButton 설정</h2><br/>
+<a>sender 라는 파라미터에 값을 전달해 버튼을 사용할 수 있다.</a>
+<a>sender에 currentTitle 속성은 현재 sender 의 값을 의미한다.</a>
+<h3>sender의 값이 있는지 모르는 경우</h3>
+<pre><code>
+  guard let title = sender.currentTitle else{
+    return
+  }
+</code></pre><br/>
+<a>sender 에 title 이 있다면 title 변수에 그 값을 전달하겠다는 의미.</a>
+<h3>sender 에 값이 있다는 게 확실한 경우</h3>
+<pre><code>
+  let title = sender.currentTitle!
+</code></pre><br/>
+<a>값이 있다는게 확실하다면 바로 쓰면 된다.</a>
