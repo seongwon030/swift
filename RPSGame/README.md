@@ -80,7 +80,7 @@
 </code></pre><br>
 
 <h2>rpsButton 설정</h2><br/>
-<a>sender 라는 파라미터에 값을 전달해 버튼을 사용할 수 있다.</a>
+<a> => rpsButton 은 sender 라는 파라미터에 값을 전달해 버튼을 사용할 수 있다.</a>
 <a>sender에 currentTitle 속성은 현재 sender 의 값을 의미한다.</a>
 <h3>sender의 값이 있는지 모르는 경우</h3>
 <pre><code>
@@ -94,3 +94,5 @@
   let title = sender.currentTitle!
 </code></pre><br/>
 <a>값이 있다는게 확실하다면 바로 쓰면 된다.</a>
+
+
