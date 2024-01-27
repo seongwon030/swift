@@ -20,7 +20,8 @@
 
 <img width="148" alt="스크린샷 2024-01-27 17 25 13" src="https://github.com/seongwon030/swift/assets/105052068/6b8ee20d-54af-4150-b109-505b13f2b1ee"><br>
 <a>위의 버튼 밑에 리셋 버튼도 추가하여 위와 같은 스택뷰로 묶는다.</a><br>
-<a>그리고 요소들 모두 제약을 설정한다.</a><br>
+<a>그리고 요소들 모두 제약을 설정한다.</a><hr>
 
+> 코드 작성<br>
   <img width="283" alt="스크린샷 2024-01-27 17 50 45" src="https://github.com/seongwon030/swift/assets/105052068/1718888f-aa78-48a9-86f6-7713c0bb81bc"><br>
 <a>바뀌는 라벨과 이미지는 viewDidLoad 위에 넣고, 버튼 동작은 viewDidLoad 아래에 넣어준다.</a>
