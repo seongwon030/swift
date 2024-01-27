@@ -66,14 +66,18 @@
 <img width="596" alt="스크린샷 2024-01-27 17 57 39" src="https://github.com/seongwon030/swift/assets/105052068/bc62b36d-8208-4e5f-8d4c-f8cead38f4b5"><br>
 <a>가위 버튼 코드 왼쪽에 동그라미 부분을 눌러 바위와 보 버튼으로 드래그한다. 이렇게하면 세 개의 버튼이 같은 동작을 수행하게 된다.</a>
 
-<hr>
+<hr/>
 > 코드 완성
-<br>
-* 이미지 넣는 방법
-1. "#imageLiteral(" 을 하면 assets 파일에 있는 이미지를 선택할 수 있다.
-2. UIImage(named: ) 로 assets 파일 안에 있는 이미지 이름을 쓰면 된다.<br>
+
+
+<br/>
+* 이미지 넣는 방법 <br/>
+1. "#imageLiteral(" 을 하면 assets 파일에 있는 이미지를 선택할 수 있다.<br/>
+2. UIImage(named: ) 로 assets 파일 안에 있는 이미지 이름을 쓰면 된다.<br/>
+
 <pre><code>
   comImageView.image = #imageLiteral(resourceName: "ready")
         myImageView.image = UIImage(named: "ready.png")
-</code></pre>
+</code></pre><br>
+
 
