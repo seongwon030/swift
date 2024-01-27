@@ -22,6 +22,46 @@
 <a>위의 버튼 밑에 리셋 버튼도 추가하여 위와 같은 스택뷰로 묶는다.</a><br>
 <a>그리고 요소들 모두 제약을 설정한다.</a><hr>
 
-> 코드 작성<br>
+> 코드 작성
+
+
   <img width="283" alt="스크린샷 2024-01-27 17 50 45" src="https://github.com/seongwon030/swift/assets/105052068/1718888f-aa78-48a9-86f6-7713c0bb81bc"><br>
 <a>바뀌는 라벨과 이미지는 viewDidLoad 위에 넣고, 버튼 동작은 viewDidLoad 아래에 넣어준다.</a>
+
+<pre><code>
+  class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    
+    @IBOutlet weak var comImageView: UIImageView!
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    @IBOutlet weak var comChoiceLabel: UILabel!
+    @IBOutlet weak var myChoiceLabel: UILabel!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+    }
+    
+    
+    @IBAction func rpsButtonTapped(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func selectButtonTapped(_ sender: UIButton) {
+    }
+    
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
+    }
+    
+}
+</code></pre><br>
+
+<a> rpsButtonTapped 은 가위 버튼을 ctrl 로 드래그 하여 생성한다. 타입은 UIButton으로 한다.</a><br>
+
+<img width="596" alt="스크린샷 2024-01-27 17 57 39" src="https://github.com/seongwon030/swift/assets/105052068/bc62b36d-8208-4e5f-8d4c-f8cead38f4b5"><br>
+<a>가위 버튼 코드 왼쪽에 동그라미 부분을 눌러 바위와 보 버튼으로 드래그한다. 이렇게하면 세 개의 버튼이 같은 동작을 수행하게 된다.</a>
