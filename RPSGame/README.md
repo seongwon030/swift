@@ -7,3 +7,12 @@
 
 <p>라벨과 이미지뷰를 스택뷰로 감싼 뒤 ctrl 을 누른 상태로 스택뷰 자신에게 연결하여 Aspect Ratio 를 1대1 비율로 맞춰주었다.</p>
 <p>그리고 하나의 스택뷰를 선택해 ctrl 을 눌러 옆에 같은 스택뷰를 복제했다. </p> 
+<p>그 다음 두 스택뷰를 하나의 스택뷰로 감싸준다.</p>
+
+<img src="https://github.com/seongwon030/swift/assets/105052068/1f6fe6b8-294c-4eda-a9b2-3c6ba38c7f68" />
+<p>그 결과 가장 큰 스택뷰 안에 두 개의 스택뷰가 있는 것을 확인할 수 있다.</p><br>
+
+<img src="https://github.com/seongwon030/swift/assets/105052068/856cf283-881b-4e72-a9fd-6bc5ffb378fb" />
+<p>스택뷰 하단에 버튼을 하나 만들어준다.</p>
+<p>배경색과 텍스트색을 설정해 준 다음 똑같이 ctrl을 눌러 2개를 복제했다.</p>
+<p>해당 버튼들이 나란히 있어야 하므로 스택뷰로 묶어준 다음 Distribution 을 Fill Equally, 간격은 10으로 설정해주었다.</p>
