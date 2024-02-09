@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     
     // 컴퓨터가 랜덤으로 숫자 선택
     var comNumber = Int.random(in: 1...10)
-    
+     
     // 내가 선택한 숫자를 담는 변수
-    var myNumber : Int = 1
+//    var myNumber : Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +33,21 @@ class ViewController: UIViewController {
         // 숫자에 따라 레이블이 변하도록
         numLabel.text = numString
         // 선택한 숫자를 변수에 저장 (문자열을 숫자로 변환하고 저장)
-        guard let num = Int(numString) else {return}
-        myNumber = num
+//        guard let num = Int(numString) else {return}
+//        myNumber = num
     }
     
     @IBAction func selectButtonTapped(_ sender: UIButton) {
+        
+        // 또다른 방법
+        // 숫자 레이블에 있는 문자열 가져오기 (옵셔널 벗기기)
+        guard let myNumString = numLabel.text else {return}
+        // 타입 변환 (문자열에서 정수로)
+        guard let myNumber = Int(myNumString) else {return}
+        
+        
+        
+        
         // 컴퓨터 숫자와 선택한 숫자 비교해서 업/다운/빙고 메인 레이블에 표시
         if comNumber > myNumber {
             mainLabel.text = "Up"
